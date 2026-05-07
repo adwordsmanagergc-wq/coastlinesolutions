@@ -7,15 +7,15 @@ export default function Logo({
   variant?: "dark" | "light";
   className?: string;
 }) {
-  const src = variant === "light" ? "/brand/logo-light.svg" : "/brand/logo.svg";
   return (
     <Image
-      src={src}
+      src="/coastlinesolutions-logo.webp"
       alt="Coastline Solutions"
-      width={220}
-      height={48}
+      width={1000}
+      height={563}
       priority
       className={className}
+      data-variant={variant}
     />
   );
 }

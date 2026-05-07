@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import ServiceCard from "@/components/ServiceCard";
 import Reviews from "@/components/Reviews";
@@ -67,19 +68,14 @@ function Hero() {
 
         <div className="lg:col-span-5">
           <div className="relative">
-            <div
-              className="aspect-[4/5] w-full rounded-3xl shadow-soft ring-1 ring-white/10"
-              style={{
-                background:
-                  "linear-gradient(160deg, #1a3d63 0%, #0e2a47 60%), radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15), transparent 60%)"
-              }}
-              aria-hidden="true"
-            />
-            <div className="absolute inset-4 overflow-hidden rounded-2xl">
-              <BeforeAfter
-                before="#7d7466"
-                after="#e9e3d4"
-                label="Soft-washed render — before / after"
+            <div className="overflow-hidden rounded-3xl shadow-soft ring-1 ring-white/10">
+              <Image
+                src="/coastline-solutions-hero.png"
+                alt="Pressure washing before and after — Coastline Solutions"
+                width={1200}
+                height={1500}
+                priority
+                className="h-auto w-full"
               />
             </div>
             <div className="absolute -bottom-5 -left-5 hidden rounded-2xl bg-white p-4 shadow-soft sm:block">
