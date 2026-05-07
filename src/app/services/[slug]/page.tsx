@@ -22,7 +22,18 @@ export function generateMetadata({
   return {
     title: content.metaTitle,
     description: content.metaDescription,
-    alternates: { canonical: `/services/${service.slug}` }
+    alternates: { canonical: `/services/${service.slug}` },
+    openGraph: {
+      title: content.ogTitle ?? content.metaTitle,
+      description: content.ogDescription ?? content.metaDescription,
+      url: `/services/${service.slug}`,
+      type: "website"
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: content.ogTitle ?? content.metaTitle,
+      description: content.ogDescription ?? content.metaDescription
+    }
   };
 }
 
@@ -48,7 +59,7 @@ export default function ServicePillarPage({
   return (
     <>
       <PageHero
-        eyebrow={service.name}
+        eyebrow={content.heroEyebrow ?? service.name}
         title={content.heroTitle}
         subtitle={content.heroSubtitle}
       />

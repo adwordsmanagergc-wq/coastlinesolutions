@@ -8,6 +8,9 @@ export interface FAQ {
 export interface ServicePageContent {
   metaTitle: string;
   metaDescription: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  heroEyebrow?: string;
   heroTitle: string;
   heroSubtitle: string;
   intro: string;
@@ -148,66 +151,76 @@ export const serviceContent: Record<ServiceKey, ServicePageContent> = {
     finalCta: "Bring it back to life."
   },
   "lawn-garden": {
-    metaTitle: "Lawn & Garden Maintenance | Coastline Solutions",
+    metaTitle: "Lawn Mowing & Garden Maintenance — Coastline Solutions",
     metaDescription:
-      "Mowing, whipper snipping, blowing, weeding and hedging. One-off or ongoing. Free quotes — call Blake on 0452 263 112.",
-    heroTitle: "Tidy lawns. Neat edges. Well-kept gardens.",
+      "Mowing, whipper snipping, blowing, weeding and hedging. One-off tidies or regular maintenance. Free quotes from Blake on 0452 263 112.",
+    ogTitle: "Lawns Mowed. Edges Sharp. Block Looking After Itself.",
+    ogDescription:
+      "Coastline Solutions handles your lawn and garden so you don't have to.",
+    heroEyebrow: "Mowing · Whipper Snipping · Blowing · Weeding · Hedging",
+    heroTitle: "Lawn & Garden Maintenance, Sorted.",
     heroSubtitle:
-      "One-off freshen-up or fortnightly maintenance — we'll keep your block looking sharp without needing to be reminded.",
+      "Whether you need a one-off freshen-up or a regular visit to keep things sharp, Coastline Solutions keeps your block tidy, neat and looking after itself.",
     intro:
-      "A neatly mown lawn with crisp edges and clean paths sets the tone for the whole property. Whether you need a tidy-up before guests arrive, an open-house freshen-up, or someone reliable on the calendar, we'll keep things looking like they did the day you moved in.",
+      "Lawns and gardens don't need a landscape architect — they need someone who turns up, does the job properly, and clears up the clippings. Coastline Solutions handles the regular work that keeps your home looking cared-for: a sharp mow, neat edges, beds free of weeds, hedges in line, and not a leaf left on the drive.",
     whatWeDo: [
-      "Mowing — residential and commercial",
-      "Whipper snipping and edging",
-      "Blowing down paths and driveways",
-      "Weeding garden beds",
-      "Hedging and shaping",
-      "Pre-sale and pre-inspection garden tidy-ups",
-      "One-off jobs or ongoing maintenance schedules"
+      "Mowing — clean cuts at the right height for your grass type",
+      "Whipper snipping — sharp edges along paths, fences, beds and trees",
+      "Blowing — paths, driveways and entries left spotless",
+      "Weeding — garden beds, paths and pavers",
+      "Hedging — neat, even hedges trimmed to shape"
     ],
-    whyHeading: "Reliable. On the same day. Every time.",
+    whyHeading: "Why regular maintenance matters.",
     whyBody:
-      "The hardest part of lawn care is just turning up. We schedule recurring jobs on a fixed day and time so you never have to chase. If it's raining we let you know — and we'll be back the next clear day.",
+      "A lawn that's mowed regularly is a lawn that thickens up and crowds out weeds. Edges trimmed every visit stop creeping into the beds. Five minutes of blowing at the end of every job is the difference between \"someone was here\" and \"the place looks great.\" Regular care costs less over time than letting it run wild and starting again.",
     steps: [
       {
-        title: "Tell us about the property",
-        body: "Block size, hedge length, anything tricky — we'll work out a fair price."
+        title: "Free on-site quote",
+        body: "Blake takes a quick look and gives you a fair written price — one-off or recurring."
       },
       {
-        title: "Free quote, fixed price",
-        body: "Per-visit pricing for ongoing work, or a one-off price for a freshen-up."
+        title: "Choose your rhythm",
+        body: "Weekly, fortnightly, monthly, or as-needed."
       },
       {
-        title: "We turn up on the day",
-        body: "Mow, edge, blow, hedge — whatever's on the agenda for the visit."
+        title: "We turn up when we say we will",
+        body: "Same friendly face each visit. No call centre, no chasing."
       },
       {
-        title: "Leave it tidy",
-        body: "Clippings collected (if requested), paths blown clean, gates closed. Done."
+        title: "Job done, area cleared",
+        body: "No clippings left behind, no leaves on the drive."
       }
     ],
     faqs: [
       {
-        q: "Do you do one-off lawn jobs or only ongoing?",
-        a: "Both. Plenty of our customers start with a one-off freshen-up and then move to a regular fortnightly schedule."
+        q: "Do you do one-off tidies as well as regular visits?",
+        a: "Yes — plenty of customers start with a one-off \"reset\" and then decide if they want us back regularly."
       },
       {
-        q: "What about overgrown lawns?",
-        a: "No problem — we'll do an initial cut-back at a slightly higher price, then bring it onto a regular schedule at the standard rate."
+        q: "How often should I have my lawn mowed?",
+        a: "In peak growing season, fortnightly is the sweet spot for most Australian lawns; monthly is fine through winter. Blake will recommend what suits your block."
       },
       {
-        q: "Do you take away clippings?",
-        a: "Standard pricing leaves clippings mulched on the lawn (better for the soil). We can take them away as an extra if preferred."
+        q: "Do you take the clippings away?",
+        a: "Either is fine — we can mulch back into the lawn or take the clippings off-site, whatever you prefer."
       },
       {
-        q: "Will you remind me when I'm due?",
-        a: "We schedule recurring work on a fixed day so you don't have to remember — and we'll text the night before each visit."
+        q: "Do you do hedges and weeding too?",
+        a: "Yes — we handle hedging, weeding garden beds, and tidying paths."
+      },
+      {
+        q: "Do you bring all your own gear?",
+        a: "Yes — mower, whipper snipper, blower, hedge trimmers and fuel. You don't need to lift a thing."
+      },
+      {
+        q: "Are you insured?",
+        a: "Fully insured. Happy to provide certificates on request."
       },
       {
         q: "Do you provide free quotes?",
-        a: "Always. Call Blake on 0452 263 112 or send the quote form."
+        a: "Always. Call Blake on 0452 263 112."
       }
     ],
-    finalCta: "Get your block looking sharp."
+    finalCta: "Want your block looking after itself?"
   }
 };
