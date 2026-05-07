@@ -31,8 +31,7 @@ export const metadata: Metadata = {
       "Painting, exterior cleaning and lawn care — one local team, one phone call."
   },
   icons: {
-    icon: "/favicon.svg",
-    apple: "/apple-touch-icon.png"
+    icon: "/favicon.svg"
   }
 };
 
