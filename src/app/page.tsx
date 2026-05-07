@@ -3,7 +3,6 @@ import Link from "next/link";
 import ServiceCard from "@/components/ServiceCard";
 import Reviews from "@/components/Reviews";
 import CTASection from "@/components/CTASection";
-import BeforeAfter from "@/components/BeforeAfter";
 import Icon from "@/components/Icon";
 import { services, site } from "@/lib/site";
 
@@ -224,9 +223,24 @@ function BeforeAfterStrip() {
           </h2>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          <BeforeAfter before="#5b5446" after="#cdbfa3" label="Soft-washed roof" />
-          <BeforeAfter before="#6e655a" after="#f0ece2" label="Repainted exterior" />
-          <BeforeAfter before="#3a3a3a" after="#bdbdbd" label="Restored driveway" />
+          {[
+            { src: "/soft-washed-roof.png", alt: "Soft-washed roof — before and after", w: 1000, h: 1240 },
+            { src: "/exterior-paint-before-after.png", alt: "Repainted exterior — before and after", w: 1000, h: 1240 },
+            { src: "/restored-driveway.png", alt: "Restored driveway — before and after", w: 1000, h: 1240 }
+          ].map((img) => (
+            <div
+              key={img.src}
+              className="overflow-hidden rounded-2xl bg-white shadow-soft ring-1 ring-navy/5"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                width={img.w}
+                height={img.h}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          ))}
         </div>
         <div className="mt-10 text-center">
           <Link href="/gallery" className="btn-outline">
