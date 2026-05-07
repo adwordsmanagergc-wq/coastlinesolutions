@@ -147,31 +147,37 @@ export const galleryItems = [
   {
     title: "Soft-washed weatherboard home",
     category: "Exterior Cleaning",
-    description: "Two-storey weatherboard restored without high pressure damage."
+    description: "Two-storey weatherboard restored without high pressure damage.",
+    image: "/soft-wash-weatherboard-home.png"
   },
   {
     title: "Repainted Hamptons exterior",
     category: "Painting",
-    description: "Fresh white weatherboard with charcoal trim — sharp and modern."
+    description: "Fresh white weatherboard with charcoal trim — sharp and modern.",
+    image: "/repainted-hamptons-exterior.png"
   },
   {
     title: "Concrete driveway restoration",
     category: "Exterior Cleaning",
-    description: "Years of grime and oil lifted with high-pressure washing."
+    description: "Years of grime and oil lifted with high-pressure washing.",
+    image: "/restored-driveway.png"
   },
   {
     title: "Interior repaint — open plan living",
     category: "Painting",
-    description: "Walls, ceiling and trims rolled out in a single weekend."
+    description: "Walls, ceiling and trims rolled out in a single weekend.",
+    image: "/interior-repaint-open-plan-living.png"
   },
   {
     title: "Hedged front garden",
     category: "Lawn & Garden",
-    description: "Overgrown hedges shaped, lawn cut and edged, paths blown."
+    description: "Overgrown hedges shaped, lawn cut and edged, paths blown.",
+    image: "/hedged-front-garden.png"
   },
   {
     title: "Roof soft-wash",
     category: "Exterior Cleaning",
-    description: "Algae and lichen removed safely with biocidal soft-wash."
+    description: "Algae and lichen removed safely with biocidal soft-wash.",
+    image: "/soft-washed-roof.png"
   }
 ];
