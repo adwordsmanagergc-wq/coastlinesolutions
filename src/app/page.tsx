@@ -69,7 +69,7 @@ function Hero() {
           <div className="relative">
             <div className="overflow-hidden rounded-3xl shadow-soft ring-1 ring-white/10">
               <Image
-                src="/coastline-solutions-hero.png"
+                src="/laymac-solutions-hero.png"
                 alt="Pressure washing before and after — LayMac Solutions"
                 width={1200}
                 height={1500}
