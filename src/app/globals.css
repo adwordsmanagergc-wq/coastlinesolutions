@@ -4,8 +4,9 @@
 
 @layer base {
   :root {
-    --navy: #0e2a47;
-    --sand: #f4efe6;
+    --navy: #0b0c10;
+    --sand: #16181d;
+    --cream: #f4efe6;
     --coast: #d7263d;
     --seafoam: #a8d5ba;
   }
@@ -15,7 +16,7 @@
   }
 
   body {
-    @apply bg-white text-navy font-sans antialiased;
+    @apply bg-navy text-cream font-sans antialiased;
     font-feature-settings: "ss01", "cv11";
   }
 
@@ -30,7 +31,7 @@
   }
 
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-coast focus-visible:ring-offset-2;
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-coast focus-visible:ring-offset-2 focus-visible:ring-offset-navy;
   }
 
   .btn-primary {
@@ -38,15 +39,15 @@
   }
 
   .btn-secondary {
-    @apply btn bg-navy text-white hover:bg-[#0a1f36] active:translate-y-px;
+    @apply btn bg-cream text-navy hover:bg-white active:translate-y-px;
   }
 
   .btn-ghost {
-    @apply btn bg-white/10 text-white ring-1 ring-white/30 hover:bg-white/20;
+    @apply btn bg-white/10 text-cream ring-1 ring-white/25 hover:bg-white/15;
   }
 
   .btn-outline {
-    @apply btn border border-navy/20 text-navy hover:bg-navy hover:text-white;
+    @apply btn border border-cream/25 text-cream hover:bg-cream hover:text-navy;
   }
 
   .eyebrow {
@@ -58,13 +59,13 @@
   }
 
   .card {
-    @apply rounded-2xl bg-white shadow-soft ring-1 ring-navy/5 transition hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(14,42,71,0.12)];
+    @apply rounded-2xl bg-navy shadow-soft ring-1 ring-cream/10 transition hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(0,0,0,0.5)];
   }
 
   .stripe-divider {
     background-image: repeating-linear-gradient(
       135deg,
-      rgba(14, 42, 71, 0.08) 0 2px,
+      rgba(244, 239, 230, 0.08) 0 2px,
       transparent 2px 14px
     );
   }

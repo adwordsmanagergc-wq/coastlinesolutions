@@ -43,7 +43,7 @@ export async function POST(req: Request) {
       : [];
 
   const summary = [
-    `New quote request — Coastline Solutions`,
+    `New quote request — LayMac Solutions`,
     ``,
     `Name:        ${body.name}`,
     `Phone:       ${body.phone}`,

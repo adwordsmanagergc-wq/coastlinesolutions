@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container-x section">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Logo variant="light" className="h-10 w-auto" />
+            <Logo className="h-12 w-auto" />
             <p className="mt-4 max-w-xs text-sm text-white/70">
               Painting, exterior cleaning and lawn care — done properly by a
               local team you can trust.

@@ -24,7 +24,7 @@ export interface ServicePageContent {
 
 export const serviceContent: Record<ServiceKey, ServicePageContent> = {
   painting: {
-    metaTitle: "House Painters | Interior & Exterior | Coastline Solutions",
+    metaTitle: "House Painters | Interior & Exterior | LayMac Solutions",
     metaDescription:
       "Local interior and exterior house painters. Repaints, new paints, garage doors. Free quotes — call Blake on 0452 263 112.",
     heroTitle: "Painting that lifts a tired home back to its best.",
@@ -87,7 +87,7 @@ export const serviceContent: Record<ServiceKey, ServicePageContent> = {
     finalCta: "Bring your walls back to life."
   },
   "exterior-cleaning": {
-    metaTitle: "Pressure & Soft Washing | Coastline Solutions",
+    metaTitle: "Pressure & Soft Washing | LayMac Solutions",
     metaDescription:
       "Soft wash, pressure wash, algae & mould removal, graffiti removal, driveways and bin pads. Free quotes — call Blake on 0452 263 112.",
     heroTitle: "Pressure & soft washing that actually restores.",
@@ -151,18 +151,18 @@ export const serviceContent: Record<ServiceKey, ServicePageContent> = {
     finalCta: "Bring it back to life."
   },
   "lawn-garden": {
-    metaTitle: "Lawn Mowing & Garden Maintenance — Coastline Solutions",
+    metaTitle: "Lawn Mowing & Garden Maintenance — LayMac Solutions",
     metaDescription:
       "Mowing, whipper snipping, blowing, weeding and hedging. One-off tidies or regular maintenance. Free quotes from Blake on 0452 263 112.",
     ogTitle: "Lawns Mowed. Edges Sharp. Block Looking After Itself.",
     ogDescription:
-      "Coastline Solutions handles your lawn and garden so you don't have to.",
+      "LayMac Solutions handles your lawn and garden so you don't have to.",
     heroEyebrow: "Mowing · Whipper Snipping · Blowing · Weeding · Hedging",
     heroTitle: "Lawn & Garden Maintenance, Sorted.",
     heroSubtitle:
-      "Whether you need a one-off freshen-up or a regular visit to keep things sharp, Coastline Solutions keeps your block tidy, neat and looking after itself.",
+      "Whether you need a one-off freshen-up or a regular visit to keep things sharp, LayMac Solutions keeps your block tidy, neat and looking after itself.",
     intro:
-      "Lawns and gardens don't need a landscape architect — they need someone who turns up, does the job properly, and clears up the clippings. Coastline Solutions handles the regular work that keeps your home looking cared-for: a sharp mow, neat edges, beds free of weeds, hedges in line, and not a leaf left on the drive.",
+      "Lawns and gardens don't need a landscape architect — they need someone who turns up, does the job properly, and clears up the clippings. LayMac Solutions handles the regular work that keeps your home looking cared-for: a sharp mow, neat edges, beds free of weeds, hedges in line, and not a leaf left on the drive.",
     whatWeDo: [
       "Mowing — clean cuts at the right height for your grass type",
       "Whipper snipping — sharp edges along paths, fences, beds and trees",

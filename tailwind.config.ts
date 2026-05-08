@@ -5,8 +5,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: "#0E2A47",
-        sand: "#F4EFE6",
+        navy: "#0B0C10",
+        sand: "#16181D",
+        cream: "#F4EFE6",
         coast: "#D7263D",
         seafoam: "#A8D5BA"
       },

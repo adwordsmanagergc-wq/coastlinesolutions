@@ -12,10 +12,10 @@ export default function Reviews({ limit }: { limit?: number }) {
               <Icon key={i} name="star" className="h-4 w-4" />
             ))}
           </div>
-          <blockquote className="mt-3 text-navy/85">&ldquo;{r.text}&rdquo;</blockquote>
-          <figcaption className="mt-4 text-sm font-semibold text-navy">
+          <blockquote className="mt-3 text-cream/85">&ldquo;{r.text}&rdquo;</blockquote>
+          <figcaption className="mt-4 text-sm font-semibold text-cream">
             {r.name}
-            <span className="font-normal text-navy/60"> · {r.suburb}</span>
+            <span className="font-normal text-cream/60"> · {r.suburb}</span>
           </figcaption>
         </figure>
       ))}

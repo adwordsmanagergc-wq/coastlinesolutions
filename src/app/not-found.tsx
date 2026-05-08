@@ -8,7 +8,7 @@ export default function NotFound() {
         <h1 className="mt-3 text-4xl font-bold sm:text-5xl">
           That page took a soft-wash.
         </h1>
-        <p className="mt-4 max-w-md text-navy/70">
+        <p className="mt-4 max-w-md text-cream/70">
           The link you followed doesn&apos;t exist. Try the home page or get
           straight to a free quote.
         </p>

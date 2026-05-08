@@ -29,12 +29,12 @@ export default function Header() {
     <header
       className={`sticky top-0 z-40 w-full transition ${
         scrolled
-          ? "bg-white/90 shadow-soft backdrop-blur"
-          : "bg-white/80 backdrop-blur"
+          ? "bg-navy/90 shadow-soft backdrop-blur"
+          : "bg-navy/80 backdrop-blur"
       }`}
     >
       <div className="container-x flex h-16 items-center justify-between gap-4 sm:h-20">
-        <Link href="/" className="flex items-center gap-2" aria-label="Coastline Solutions home">
+        <Link href="/" className="flex items-center gap-2" aria-label="LayMac Solutions home">
           <Logo />
         </Link>
 
@@ -43,7 +43,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-navy/80 transition hover:text-coast"
+              className="text-sm font-medium text-cream/80 transition hover:text-coast"
             >
               {item.label}
             </Link>
@@ -53,7 +53,7 @@ export default function Header() {
         <div className="hidden items-center gap-3 lg:flex">
           <a
             href={`tel:${site.phoneTel}`}
-            className="text-sm font-semibold text-navy hover:text-coast"
+            className="text-sm font-semibold text-cream hover:text-coast"
           >
             Call Blake — {site.phone}
           </a>
@@ -67,7 +67,7 @@ export default function Header() {
           aria-label="Toggle menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-lg ring-1 ring-navy/10 lg:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-lg ring-1 ring-cream/10 lg:hidden"
         >
           <span className="sr-only">Menu</span>
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -85,14 +85,14 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-navy/10 bg-white lg:hidden">
+        <div className="border-t border-cream/10 bg-sand lg:hidden">
           <nav className="container-x flex flex-col gap-1 py-4" aria-label="Mobile">
             {nav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2 text-base font-medium text-navy hover:bg-sand"
+                className="rounded-lg px-3 py-2 text-base font-medium text-cream hover:bg-cream/5"
               >
                 {item.label}
               </Link>

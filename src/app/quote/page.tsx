@@ -21,7 +21,7 @@ export default function QuotePage() {
       <section className="bg-sand">
         <div className="container-x section grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <div className="rounded-2xl bg-white p-6 shadow-soft sm:p-8">
+            <div className="rounded-2xl bg-navy p-6 shadow-soft ring-1 ring-cream/10 sm:p-8">
               <QuoteForm />
             </div>
           </div>
@@ -52,20 +52,20 @@ export default function QuotePage() {
                   </li>
                 </ul>
               </div>
-              <div className="rounded-2xl bg-white p-6 shadow-soft">
+              <div className="rounded-2xl bg-navy p-6 shadow-soft ring-1 ring-cream/10">
                 <p className="eyebrow">What happens next</p>
-                <ol className="mt-3 space-y-3 text-sm text-navy/80">
+                <ol className="mt-3 space-y-3 text-sm text-cream/80">
                   <li>
-                    <span className="font-semibold text-navy">1.</span> Blake
+                    <span className="font-semibold text-cream">1.</span> Blake
                     reads your enquiry and gets back to you (usually within one
                     business day).
                   </li>
                   <li>
-                    <span className="font-semibold text-navy">2.</span> We
+                    <span className="font-semibold text-cream">2.</span> We
                     arrange a quick on-site visit at a time that suits you.
                   </li>
                   <li>
-                    <span className="font-semibold text-navy">3.</span> You
+                    <span className="font-semibold text-cream">3.</span> You
                     receive a written, fixed-price quote — no obligation.
                   </li>
                 </ol>

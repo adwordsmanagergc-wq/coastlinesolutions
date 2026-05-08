@@ -1,21 +1,18 @@
 import Image from "next/image";
 
 export default function Logo({
-  variant = "dark",
-  className = "h-9 w-auto"
+  className = "h-10 w-auto sm:h-12"
 }: {
-  variant?: "dark" | "light";
   className?: string;
 }) {
   return (
     <Image
-      src="/coastlinesolutions-logo.webp"
-      alt="Coastline Solutions"
-      width={1000}
-      height={563}
+      src="/laymak-solutions-logo.png"
+      alt="LayMac Solutions"
+      width={1024}
+      height={791}
       priority
       className={className}
-      data-variant={variant}
     />
   );
 }

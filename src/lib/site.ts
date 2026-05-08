@@ -1,5 +1,5 @@
 export const site = {
-  name: "Coastline Solutions",
+  name: "LayMac Solutions",
   owner: "Blake Laybutt",
   phone: "0452 263 112",
   phoneTel: "+61452263112",
@@ -131,7 +131,7 @@ export const reviews = [
     name: "Lauren H.",
     suburb: "Gosford",
     text:
-      "Used Coastline for a pre-sale freshen up — paint touch-ups, driveway clean, hedges. Place sold the first weekend.",
+      "Used LayMac for a pre-sale freshen up — paint touch-ups, driveway clean, hedges. Place sold the first weekend.",
     rating: 5
   },
   {

@@ -44,7 +44,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
 
   if (status === "success") {
     return (
-      <div className="rounded-2xl bg-seafoam/30 p-8 text-navy">
+      <div className="rounded-2xl bg-seafoam/30 p-8 text-cream">
         <h3 className="text-2xl font-bold">Thanks — message received.</h3>
         <p className="mt-2">
           Blake will be in touch shortly, usually within one business day. If
@@ -80,8 +80,8 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
         />
       </div>
 
-      <fieldset className="rounded-xl border border-navy/10 p-4">
-        <legend className="px-2 text-sm font-semibold text-navy">Service required</legend>
+      <fieldset className="rounded-xl border border-cream/10 p-4">
+        <legend className="px-2 text-sm font-semibold text-cream">Service required</legend>
         <div className="grid gap-2 sm:grid-cols-2">
           {services.map((s) => (
             <label key={s.slug} className="flex items-center gap-2 text-sm">
@@ -89,7 +89,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
                 type="checkbox"
                 name="services"
                 value={s.name}
-                className="h-4 w-4 rounded border-navy/30 text-coast focus:ring-coast"
+                className="h-4 w-4 rounded border-cream/30 text-coast focus:ring-coast"
               />
               {s.name}
             </label>
@@ -99,7 +99,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
               type="checkbox"
               name="services"
               value="Not sure"
-              className="h-4 w-4 rounded border-navy/30 text-coast focus:ring-coast"
+              className="h-4 w-4 rounded border-cream/30 text-coast focus:ring-coast"
             />
             Not sure
           </label>
@@ -107,7 +107,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
       </fieldset>
 
       <div className="grid gap-1">
-        <label htmlFor="description" className="text-sm font-medium text-navy">
+        <label htmlFor="description" className="text-sm font-medium text-cream">
           Brief description of the job
         </label>
         <textarea
@@ -115,7 +115,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
           name="description"
           rows={4}
           required
-          className="rounded-xl border border-navy/15 bg-white px-3.5 py-2.5 text-sm shadow-sm focus:border-coast focus:outline-none focus:ring-2 focus:ring-coast/20"
+          className="rounded-xl border border-cream/15 bg-sand px-3.5 py-2.5 text-sm shadow-sm focus:border-coast focus:outline-none focus:ring-2 focus:ring-coast/20"
         />
       </div>
 
@@ -125,15 +125,15 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
         placeholder="e.g. weekdays after 4pm"
       />
 
-      <label className="flex items-start gap-3 text-sm text-navy/80">
+      <label className="flex items-start gap-3 text-sm text-cream/80">
         <input
           type="checkbox"
           name="consent"
           required
-          className="mt-1 h-4 w-4 rounded border-navy/30 text-coast focus:ring-coast"
+          className="mt-1 h-4 w-4 rounded border-cream/30 text-coast focus:ring-coast"
         />
         <span>
-          I&apos;m happy for Coastline Solutions to contact me about my quote.
+          I&apos;m happy for LayMac Solutions to contact me about my quote.
         </span>
       </label>
 
@@ -147,7 +147,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
         >
           {status === "submitting" ? "Sending…" : "Send my quote request"}
         </button>
-        <p className="text-xs text-navy/60">
+        <p className="text-xs text-cream/60">
           We usually reply within one business day. Free, no-obligation.
         </p>
       </div>
@@ -180,7 +180,7 @@ function Field({
 }) {
   return (
     <div className={`grid gap-1 ${className}`}>
-      <label htmlFor={name} className="text-sm font-medium text-navy">
+      <label htmlFor={name} className="text-sm font-medium text-cream">
         {label}
         {required && <span className="text-coast"> *</span>}
       </label>
@@ -191,7 +191,7 @@ function Field({
         required={required}
         autoComplete={autoComplete}
         placeholder={placeholder}
-        className="rounded-xl border border-navy/15 bg-white px-3.5 py-2.5 text-sm shadow-sm focus:border-coast focus:outline-none focus:ring-2 focus:ring-coast/20"
+        className="rounded-xl border border-cream/15 bg-sand px-3.5 py-2.5 text-sm shadow-sm focus:border-coast focus:outline-none focus:ring-2 focus:ring-coast/20"
       />
     </div>
   );

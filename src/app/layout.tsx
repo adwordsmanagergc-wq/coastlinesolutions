@@ -9,8 +9,8 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Coastline Solutions — Painting, Pressure Washing & Lawn Care",
-    template: "%s | Coastline Solutions"
+    default: "LayMac Solutions — Painting, Pressure Washing & Lawn Care",
+    template: "%s | LayMac Solutions"
   },
   description:
     "Local painting, soft & pressure washing, and lawn care. One trusted local team. Free quotes from Blake — call 0452 263 112.",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Coastline Solutions",
+    title: "LayMac Solutions",
     description:
       "Painting, exterior cleaning and lawn care — one local team, one phone call."
   },

@@ -13,7 +13,7 @@ export default function BeforeAfter({
 }) {
   const [pos, setPos] = useState(50);
   return (
-    <figure className="overflow-hidden rounded-2xl bg-navy/5 ring-1 ring-navy/10">
+    <figure className="overflow-hidden rounded-2xl bg-cream/5 ring-1 ring-cream/10">
       <div className="relative aspect-[4/3] w-full select-none">
         <div
           className="absolute inset-0"
@@ -42,7 +42,7 @@ export default function BeforeAfter({
           After
         </div>
         <div
-          className="absolute inset-y-0 w-0.5 bg-white shadow"
+          className="absolute inset-y-0 w-0.5 bg-sand shadow"
           style={{ left: `calc(${pos}% - 1px)` }}
           aria-hidden="true"
         />
@@ -56,7 +56,7 @@ export default function BeforeAfter({
           className="absolute inset-0 h-full w-full cursor-ew-resize appearance-none bg-transparent opacity-0"
         />
       </div>
-      <figcaption className="border-t border-navy/10 bg-white px-4 py-3 text-sm font-medium text-navy">
+      <figcaption className="border-t border-cream/10 bg-sand px-4 py-3 text-sm font-medium text-cream">
         {label}
       </figcaption>
     </figure>

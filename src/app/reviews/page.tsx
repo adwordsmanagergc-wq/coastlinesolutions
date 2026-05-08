@@ -6,7 +6,7 @@ import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "Reviews — What Locals Say",
   description:
-    "Real reviews from local Central Coast customers — painting, soft-washing, pressure cleaning and lawn care by Coastline Solutions."
+    "Real reviews from local Central Coast customers — painting, soft-washing, pressure cleaning and lawn care by LayMac Solutions."
 };
 
 export default function ReviewsPage() {

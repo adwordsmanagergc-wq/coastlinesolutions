@@ -64,11 +64,11 @@ export default function ServicePillarPage({
         subtitle={content.heroSubtitle}
       />
 
-      <section className="bg-white">
+      <section className="bg-sand">
         <div className="container-x section grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
             <p className="eyebrow">Overview</p>
-            <p className="mt-3 text-lg text-navy/85">{content.intro}</p>
+            <p className="mt-3 text-lg text-cream/85">{content.intro}</p>
 
             <h2 className="mt-12 text-2xl font-bold">{
               service.key === "painting"
@@ -79,7 +79,7 @@ export default function ServicePillarPage({
             }</h2>
             <ul className="mt-5 grid gap-2 sm:grid-cols-2">
               {content.whatWeDo.map((item) => (
-                <li key={item} className="flex items-start gap-2 text-navy/85">
+                <li key={item} className="flex items-start gap-2 text-cream/85">
                   <Icon name="check" className="mt-0.5 h-5 w-5 text-coast" />
                   <span>{item}</span>
                 </li>
@@ -87,7 +87,7 @@ export default function ServicePillarPage({
             </ul>
 
             <h2 className="mt-12 text-2xl font-bold">{content.whyHeading}</h2>
-            <p className="mt-3 text-navy/80">{content.whyBody}</p>
+            <p className="mt-3 text-cream/80">{content.whyBody}</p>
 
             <h2 className="mt-12 text-2xl font-bold">How we work</h2>
             <ol className="mt-5 grid gap-4">
@@ -97,8 +97,8 @@ export default function ServicePillarPage({
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-semibold text-navy">{step.title}</h3>
-                    <p className="text-sm text-navy/75">{step.body}</p>
+                    <h3 className="font-semibold text-cream">{step.title}</h3>
+                    <p className="text-sm text-cream/75">{step.body}</p>
                   </div>
                 </li>
               ))}
@@ -132,11 +132,11 @@ export default function ServicePillarPage({
                       <li key={s.slug}>
                         <Link
                           href={`/services/${s.slug}`}
-                          className="font-medium text-navy hover:text-coast"
+                          className="font-medium text-cream hover:text-coast"
                         >
                           {s.name} →
                         </Link>
-                        <p className="text-navy/65">{s.short}</p>
+                        <p className="text-cream/65">{s.short}</p>
                       </li>
                     ))}
                 </ul>
@@ -153,14 +153,14 @@ export default function ServicePillarPage({
             <h2 className="mt-3 text-center text-3xl font-bold">
               Common questions
             </h2>
-            <div className="mt-10 divide-y divide-navy/10 rounded-2xl bg-white shadow-soft">
+            <div className="mt-10 divide-y divide-navy/10 rounded-2xl bg-sand shadow-soft">
               {content.faqs.map((faq) => (
                 <details key={faq.q} className="group p-6">
-                  <summary className="flex cursor-pointer list-none items-center justify-between text-left font-semibold text-navy">
+                  <summary className="flex cursor-pointer list-none items-center justify-between text-left font-semibold text-cream">
                     {faq.q}
                     <span className="text-coast transition group-open:rotate-45">+</span>
                   </summary>
-                  <p className="mt-3 text-navy/75">{faq.a}</p>
+                  <p className="mt-3 text-cream/75">{faq.a}</p>
                 </details>
               ))}
             </div>

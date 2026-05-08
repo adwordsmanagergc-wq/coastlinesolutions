@@ -6,9 +6,9 @@ import Icon from "@/components/Icon";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About Blake & Coastline Solutions",
+  title: "About Blake & LayMac Solutions",
   description:
-    "Coastline Solutions is owned and run by Blake Laybutt — painting, exterior cleaning and lawn care, done properly by a local team."
+    "LayMac Solutions is owned and run by Blake Laybutt — painting, exterior cleaning and lawn care, done properly by a local team."
 };
 
 export default function AboutPage() {
@@ -16,27 +16,27 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About"
-        title="Meet Blake — and Coastline Solutions."
+        title="Meet Blake — and LayMac Solutions."
         subtitle="A local who got tired of seeing tired-looking homes — and decided to do something about it."
       />
 
-      <section className="bg-white">
+      <section className="bg-sand">
         <div className="container-x section grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-8">
-            <p className="text-lg text-navy/85">
-              Coastline Solutions is owned and run by Blake Laybutt — a local
+            <p className="text-lg text-cream/85">
+              LayMac Solutions is owned and run by Blake Laybutt — a local
               who got tired of seeing tired-looking homes and wanted to do
               something about it. What started as a side of painting and
               pressure washing has grown into a full local service: painting
               inside and out, soft and high-pressure washing, and ongoing lawn
               and garden care.
             </p>
-            <p className="mt-5 text-navy/80">
+            <p className="mt-5 text-cream/80">
               The promise is simple: turn up when we say we will, do the job
               properly, leave the place tidier than we found it, and charge a
               fair price. No surprises, no shortcuts.
             </p>
-            <p className="mt-5 text-navy/80">
+            <p className="mt-5 text-cream/80">
               Blake quotes every job personally — and Blake does (or runs)
               every job personally. There&apos;s no call centre and no
               middleman. If something isn&apos;t right, you call Blake and it
@@ -63,9 +63,9 @@ export default function AboutPage() {
                   b: "Paths blown, gates closed, drop sheets folded. Always."
                 }
               ].map((p) => (
-                <li key={p.t} className="rounded-2xl bg-sand p-5">
-                  <h3 className="font-semibold text-navy">{p.t}</h3>
-                  <p className="mt-1 text-sm text-navy/75">{p.b}</p>
+                <li key={p.t} className="rounded-2xl bg-navy p-5 ring-1 ring-cream/10">
+                  <h3 className="font-semibold text-cream">{p.t}</h3>
+                  <p className="mt-1 text-sm text-cream/75">{p.b}</p>
                 </li>
               ))}
             </ul>
